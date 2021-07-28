@@ -39,7 +39,7 @@ function downloadBinaries() {
 
     var filename = operatingSystem + "-" + arch + ".tar.gz";
     var url = "https://github.com/lydell/elm-old-binaries/releases/download/main/"
-      + platform.elmVersion + "/" + filename;
+      + platform.elmVersion + "-" + filename;
 
     var untar = tar.Extract({path: distDir, strip: 1})
         .on("error", function(error) {
